@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5d1ac10ebb204a2293270950e1588692" Name="Diagram1" ZoomLevel="109">
+        <EntityTypeShape EntityType="huseyinModel.Category" Width="1.5" PointX="3" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="huseyinModel.Course" Width="1.5" PointX="11.375" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="huseyinModel.CustomerDemographic" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="huseyinModel.Customer" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="huseyinModel.Employee" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="huseyinModel.Enrollment" Width="1.5" PointX="9.625" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="huseyinModel.Order_Detail" Width="1.5" PointX="7.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="huseyinModel.Order" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="huseyinModel.Product" Width="1.5" PointX="5.25" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="huseyinModel.Region" Width="1.5" PointX="6.125" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="huseyinModel.Shipper" Width="1.5" PointX="3" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="huseyinModel.Supplier" Width="1.5" PointX="3" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="huseyinModel.Territory" Width="1.5" PointX="8" PointY="11.5" IsExpanded="true" />
+        <AssociationConnector Association="huseyinModel.FK_Products_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="huseyinModel.FK_dbo_Enrollment_dbo_Course_CourseID" ManuallyRouted="false" />
+        <AssociationConnector Association="huseyinModel.FK_Orders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="huseyinModel.FK_Employees_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="huseyinModel.FK_Orders_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="huseyinModel.FK_Order_Details_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="huseyinModel.FK_Order_Details_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="huseyinModel.FK_Orders_Shippers" ManuallyRouted="false" />
+        <AssociationConnector Association="huseyinModel.FK_Products_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="huseyinModel.FK_Territories_Region" ManuallyRouted="false" />
+        <AssociationConnector Association="huseyinModel.CustomerCustomerDemo" ManuallyRouted="false" />
+        <AssociationConnector Association="huseyinModel.EmployeeTerritories" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="huseyinModel.Student" Width="1.5" PointX="8" PointY="0.75" />
+        <AssociationConnector Association="huseyinModel.FK_dbo_Enrollment_dbo_Student_StudentID" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
