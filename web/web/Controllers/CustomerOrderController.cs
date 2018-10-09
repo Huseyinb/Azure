@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
+using System.Linq;
+using System.Net;
 using System.Web.Mvc;
 using web.Models;
 
@@ -9,15 +12,15 @@ namespace web.Controllers
 {
     public class CustomerOrderController : Controller
     {
-
         private huseyinEntities2 db = new huseyinEntities2();
-        // GET: CustomerOrder
+        // GET: CustomerOrader
         public ActionResult Index()
         {
-            var query = from c in db.Customers join o in db.Orders on c.CustomerID equals o.CustomerID join od in db.Order_Details on o.OrderID equals od.OrderID select new CustomerOrders { CompanyName = c.CompanyName, ContactName = c.ContactName, Product = od.Product, UnitPrice = od.UnitPrice };
+            List<Customer> customerlist = db.Customers.ToList();
+            List<Order> orederlist = db.Orders.ToList();
+            List<Order_Detail> odlist = db.Order_Details.ToList();
 
-
-            return View(query.ToList());
+            return View();
         }
     }
 }
