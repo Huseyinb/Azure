@@ -11,7 +11,7 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Student</h4>
         <hr />
@@ -45,10 +45,10 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Engelli, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                
-                    @Html.CheckBoxFor(model => model.Engelli, htmlAttributes: new { @class = "my-checkbox" })
-                    @Html.ValidationMessageFor(model => model.Engelli, "", new { @class = "text-danger" })
-                
+
+                @Html.CheckBoxFor(model => model.Engelli, htmlAttributes: new { @class = "my-checkbox" })
+                @Html.ValidationMessageFor(model => model.Engelli, "", new { @class = "text-danger" })
+
             </div>
         </div>
 

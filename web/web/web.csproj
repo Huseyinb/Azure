@@ -203,7 +203,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Controllers\CustomerOraderController.cs" />
+    <Compile Include="Controllers\CustomerOrderController.cs" />
     <Compile Include="Controllers\EnrollmentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
@@ -223,7 +223,7 @@
     <Compile Include="Models\CustomerDemographic.cs">
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\CustomerOrderModels.cs" />
+    <Compile Include="Models\CustomerOrders.cs" />
     <Compile Include="Models\DBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -420,10 +420,10 @@
     <Content Include="Views\Enrollments\Details.cshtml" />
     <Content Include="Views\Enrollments\Edit.cshtml" />
     <Content Include="Views\Enrollments\Index.cshtml" />
+    <Content Include="Views\CustomerOrder\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\CustomerOrader\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
